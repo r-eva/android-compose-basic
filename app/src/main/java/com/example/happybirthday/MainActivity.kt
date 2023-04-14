@@ -270,10 +270,10 @@ fun LayoutBusinessCard() {
             DiceWithButtonAddImage(modifier = Modifier
                 .fillMaxSize()
                 .wrapContentSize(Alignment.Center)
-                .weight(1f))
+                .weight(2f))
             TipTimeScreen(modifier = Modifier
                 .fillMaxSize()
-                .weight(1f).padding(start = 20.dp, end = 20.dp)
+                .weight(3f).padding(start = 20.dp, end = 20.dp)
                 .wrapContentSize(Alignment.Center)
             )
         }
@@ -303,7 +303,7 @@ fun DiceWithButtonAddImage(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(imageResult),
             contentDescription = "1",
-            modifier = Modifier.size(180.dp),
+            modifier = Modifier.size(130.dp),
         )
         Spacer(modifier = Modifier.height(2.dp))
         Button(onClick = { result = (1..6).random() }) {
